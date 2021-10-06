@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Javascript Excercise
+    </title>
+    <script>
+        function sorting(array) {
+            document.write("Unsorted array: ");
+            for (var i = 0; i < array.length; i++) {
+                if (i == array.length-1) {
+                    document.write(array[i]);
+                }
+                else {
+                    document.write(array[i] + ", ");
+                }
+            }
+
+            document.write("<br><br>");
+
+            var minimum, swap;
+            for (var i = 0; i < array.length - 1; i++) {
+                minimum = i;
+                for (var j = i + 1; j < array.length; j++) {
+                    if (array[j] < array[minimum]) {
+                        minimum = j;
+                    }
+                }
+                swap = array[minimum];
+                array[minimum] = array[i];
+                array[i] = swap;
+            }
+
+            document.write("Sorted array: ");
+            for (var i = 0; i < array.length; i++) {
+                if (i == array.length-1) {
+                    document.write(array[i]);
+                }
+                else {
+                    document.write(array[i] + ", ");
+                }
+            }
+            return array;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>
+    <script>
+        let a = [3,6,5,1,0,9,21,100,-6,4,-1,77];
+        sorting(a);
+    </script>
+    </h2>
+</body>
+
+</html>
