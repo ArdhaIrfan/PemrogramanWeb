@@ -1,0 +1,15 @@
+body {
+    margin: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.error {
+    color: red;
+    font-style: italic;
+    font-size: small;
+}
+.placeholderstyle {
+    font-style: normal;
+    color: initial;
+    font-size: medium;
+}
